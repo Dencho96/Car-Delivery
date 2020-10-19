@@ -45,4 +45,19 @@ body{
     background-color: #0d5195;
     color: white;
     text-transform: uppercase;
+    outline: transparent;
+    transition-property: border-radius, box-shadow, background-color;
+    transition-duration: 0.2s;
+    &:focus,&:active{
+        border-radius: 10px;
+    }
+    &:focus{
+        box-shadow: inset 0 0 5px 0 white;
+    }
+    &:hover{
+        background-color: rgba(#0d5195, 0.8);
+    }
+    &:active{
+        box-shadow: inset 0 0 15px 0 white;
+    }
 }
