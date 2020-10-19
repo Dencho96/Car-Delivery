@@ -1,0 +1,52 @@
+.header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+
+    &__inner {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        justify-content: center;
+        align-items: center;
+        width: 188px;
+        height: 188px;
+        background-color: #181834;
+        transition: background-color 0.3s;
+        outline: transparent;
+        &:hover{
+            background-color: rgba(#181834, 0.8);
+        }
+    }
+
+    &__nav {
+        margin-left: auto;
+        margin-right: 43px;
+    }
+
+    &__link {
+        position: relative;
+        padding: 22px 17px;
+        text-transform: uppercase;
+        color: white;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            left: 17px;
+            height: 3px;
+            width: 0;
+            background-color: white;
+            transition-property: width;
+            transition-duration: 0.2s;
+        }
+
+        &:hover::after {
+            width: calc(100% - 34px);
+        }
+    }
+}

@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    overflow-y: hidden;
 }
 
 *,
@@ -11,6 +12,7 @@ html {
 a {
     display: inline-block;
     text-decoration: none;
+    color: inherit;
 }
 
 ul,
@@ -18,4 +20,29 @@ li {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    background-color: white;
+}
+
+.container{
+    max-width: 1370px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.btn{
+    padding: 22px 25px;
+    background-color: #0d5195;
+    color: white;
+    text-transform: uppercase;
 }
