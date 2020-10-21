@@ -49,5 +49,9 @@
         &:hover::after {
             width: calc(100% - 34px);
         }
+
+        &.active::after{
+            width: calc(100% - 34px);
+        }
     }
 }
