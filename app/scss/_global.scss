@@ -48,6 +48,7 @@ body{
     outline: transparent;
     transition-property: border-radius, box-shadow, background-color;
     transition-duration: 0.2s;
+    border: none;
     &:focus,&:active{
         border-radius: 10px;
     }
