@@ -1,0 +1,220 @@
+@media (max-width:1450px) {
+    .top{
+        &__inner{
+            display: none;
+        }
+        &__box{
+            max-width: 720px;
+            padding: 200px 0 140px 140px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .header {
+        &__tel {
+            display: none;
+        }
+    }
+    .advantages{
+        &__inner{
+            flex-wrap: wrap;
+            max-width: 950px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__item{
+            margin-bottom: 45px;
+            max-width: 40%;
+            width: 100%;
+            &+&{
+                margin-left: 0;
+            }
+        }
+    }
+    .stats{
+        &__item{
+            margin-bottom: 70px;
+        }
+    }
+    .footer{
+        &__inner{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__col{
+            max-width: 100%;
+        }
+        &__descr{
+            max-width: 73%;
+            width: 100%;
+            margin: 0 auto 40px;
+        }
+        &__menu{
+            max-width: 35%;
+            margin-bottom: 40px;
+        }
+        &__address{
+            text-align: center;
+        }
+        &__address-item{
+            display: inline-block;
+            &+&{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 30px 0 30px;
+        background-color: rgba(#181834, 0.8);
+
+        &__logo {
+            margin-left: 25px;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+        }
+
+        &__nav {
+            display: none;
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            height: 100vh;
+            top: 149px;
+            left: 0;
+            background-color: #181834;
+        }
+
+        &__list, &__link{
+            display: block;
+        }
+
+        &__link{
+            padding: 30px 20px;
+            text-align: center;
+            &::after{
+                display: none;
+            }
+        }
+
+        &__btn{
+            display: block;
+        }
+    }
+    .hero{
+        &__info{
+            display: none;
+        }
+    }
+    .top{
+        &__box{
+            padding: 120px 20px 120px 95px;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .message{
+        padding: 70px 0 60px 0;
+        &__form{
+            padding: 30px 10px 20px;
+        }
+        &__inner{
+            flex-direction: column;
+        }
+        &__box{
+            margin-bottom: 20px;
+            max-width: 100%;
+            width: 100%;
+        }
+        &__text{
+            min-height: 200px;
+        }
+    }
+    .stats{
+        &__item{
+            margin-bottom: 30px;
+        }
+        &__title{
+            margin-bottom: 50px;
+        }
+    }
+    .footer{        
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__col{
+            &+&{
+                margin-left: 0;
+            }
+        }
+        &__menu{
+            max-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero{
+        &__box{
+            bottom: 17%;
+            right: 10%;
+        }
+        &__title{
+            font-size: 42px;
+        }
+    }
+    .advantages{
+        &__item{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .top{
+        &__box{
+            padding: 100px 20px 100px 95px;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .message{
+        padding: 40px 0 20px 0;
+    }
+    .stats{
+        &__inner{
+            flex-wrap: wrap;
+        }
+        &__item{
+            flex-direction: column;
+            max-width: 100%;
+            width: 100%;
+            padding-left: 70px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .top{
+        &__box{
+            padding: 70px 20px 70px 45px;
+        }
+    }
+    .stats{
+        &__item{
+            padding-left: 20px;
+        }
+    }
+    .footer{
+        &__address-item{
+            display: block;
+            max-width: 250px;
+            margin: 0 auto 15px !important;
+            padding: 10px inherit 10px;
+            text-align: left;
+        }
+    }
+}
+

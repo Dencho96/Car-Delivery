@@ -54,4 +54,16 @@
             width: calc(100% - 34px);
         }
     }
+
+    &__btn{
+        display: none;
+        outline: transparent !important;
+    }
+
+    &__btn-inner{
+        background-color: white !important;
+        &::after,&::before{
+            background-color: white !important;
+        }
+    }
 }

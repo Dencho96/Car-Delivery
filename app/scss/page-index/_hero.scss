@@ -30,6 +30,8 @@
         z-index: 2;
         color: white;
         text-align: right;
+        transition-property: z-index;
+        transition-duration: 0.7s;
     }
 
     &__title {
@@ -49,7 +51,7 @@
 
     svg {
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         z-index: 2;
     }
@@ -67,27 +69,28 @@
         color: white;
     }
 
-    &__col{
-        &+&{
+    &__col {
+        &+& {
             margin-left: 100px;
         }
     }
 
-    &__col-title{
+    &__col-title {
         padding-bottom: 20px;
         text-transform: uppercase;
     }
 
-    &__address{
+    &__address {
         font-style: normal;
     }
 
-    &__address-item{
+    &__address-item {
         display: block;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         color: #a7a7b1;
-        &+&{
+
+        &+& {
             margin-top: 15px;
         }
     }

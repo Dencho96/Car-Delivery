@@ -19,18 +19,11 @@ gulp.task('sass', function() {
         .pipe(browserSync.reload({ stream: true }))
 });
 
-// gulp.task('script', function() {
-//     return gulp.src([
-            
-//         ])
-//         .pipe(concat('libs.min.js'))
-//         .pipe(uglify())
-//         .pipe(gulp.dest('app/js'))
-// })
 
 gulp.task('style', function() {
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
+            'node_modules/hamburgers/dist/hamburgers.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())

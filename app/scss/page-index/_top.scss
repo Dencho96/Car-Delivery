@@ -3,7 +3,7 @@
     padding-top: 110px;
 
     &__box {
-        padding: 290px 0 200px 200px;
+        padding: 290px 20px 200px 200px;
         max-width: 960px;
         width: 100%;
         background-color: $blue;
@@ -17,6 +17,7 @@
     }
 
     &__text {
+        margin: 0 0 15px;
         max-width: 370px;
         font-family: "Open Sans";
         font-weight: 400;
