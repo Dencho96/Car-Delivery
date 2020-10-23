@@ -1,0 +1,103 @@
+.footer {
+    padding: 100px 0 100px;
+    background-color: #1c1c1c;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 24px;    
+
+    &__inner {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__col {
+        max-width: 310px;
+        width: 100%;
+        color: white;
+        &+&{
+            margin-left: 60px;
+        }
+    }
+
+    &__descr {
+        max-width: 410px;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 20px;
+    }
+    &__text, &__link, &__address{
+        color: rgba(white, 0.35)
+    }
+    &__text {
+        margin: 0;
+    }
+    &__menu{
+        max-width: 260px;
+        margin-right: auto;
+        margin-top: -9px;
+    }
+    &__link, &__address-item{
+        transition-property: color, border-color;
+        transition-duration: 0.2s;
+        outline: transparent;
+        &:focus{
+            color: orange;
+        }
+        &:hover{
+            color: white;
+            border-color: $blue;
+        }
+        &:active{
+            color: red;
+        }
+    }
+    &__link{
+        position: relative;
+        width: 100%;
+        padding: 9px 0;
+        border-bottom: 1px solid #4c4c4c;
+        text-transform: uppercase;        
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 15px;
+            width: 6px;
+            height: 12px;
+            background-image: url(../../images/icon-chevron.png);
+        }
+    }
+    &__address{
+        font-style: normal;
+    }
+    &__address-item{
+        position: relative;
+        display: block;
+        padding-left: 25px;
+        font-size: 14px;
+        &+&{
+            margin-top: 20px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+
+        }
+        &--phone::before{
+            width: 16px;
+            height: 16px;
+            background-image: url(../../images/icon-phone.png);
+        }
+        &--email::before{
+            top: 7px;
+            width: 16px;
+            height: 12px;
+            background-image: url(../../images/icon-email.png);
+        }
+    }
+}
