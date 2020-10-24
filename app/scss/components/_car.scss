@@ -14,6 +14,7 @@
         width: 100%;
         max-height: 190px;
         height: 100%;
+        outline: transparent;
     }
 
     &__img {
@@ -40,6 +41,17 @@
     &__title {
         display: block;
         font-size: 16px;
+        outline: transparent;
+        transition: color, 0.3s;
+        &:focus{
+            color: brown;
+        }
+        &:hover{
+            color: $blue;
+        }
+        &:active{
+            color: rgba($blue, 0.6);
+        }
     }
 
     &__price {

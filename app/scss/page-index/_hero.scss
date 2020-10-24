@@ -80,10 +80,7 @@
         text-transform: uppercase;
     }
 
-    &__address {
-        font-style: normal;
-    }
-
+    &__time,
     &__address-item {
         display: block;
         font-family: "Open Sans", sans-serif;
@@ -92,6 +89,29 @@
 
         &+& {
             margin-top: 15px;
+        }
+    }
+
+    &__address {
+        font-style: normal;
+    }
+
+    &__address-item {
+        outline: transparent;
+        transition: color, 0.3s;
+
+
+
+        &:focus {
+            color: orange;
+        }
+
+        &:hover {
+            color: white;
+        }
+
+        &:active {
+            color: rgba(white, 0.8);
         }
     }
 }

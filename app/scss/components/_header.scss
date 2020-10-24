@@ -17,7 +17,8 @@
         background-color: #181834;
         transition: background-color 0.3s;
         outline: transparent;
-        &:hover{
+
+        &:hover {
             background-color: rgba(#181834, 0.8);
         }
     }
@@ -33,6 +34,7 @@
         text-transform: uppercase;
         color: white;
         outline: transparent;
+        transition: color, 0.3s;
 
         &::after {
             content: "";
@@ -46,23 +48,33 @@
             transition-duration: 0.2s;
         }
 
+        &:focus::after {
+            width: calc(100% - 34px);
+        }
+
         &:hover::after {
             width: calc(100% - 34px);
         }
 
-        &.active::after{
+        &:active {
+            color: rgba(white, 0.7);
+        }
+
+        &.active::after {
             width: calc(100% - 34px);
         }
     }
 
-    &__btn{
+    &__btn {
         display: none;
         outline: transparent !important;
     }
 
-    &__btn-inner{
+    &__btn-inner {
         background-color: white !important;
-        &::after,&::before{
+
+        &::after,
+        &::before {
             background-color: white !important;
         }
     }
